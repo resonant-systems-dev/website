@@ -1,3 +1,7 @@
+---
+import '../styles/global.css'
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -5,18 +9,18 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Resonant Systems</title>
+		<meta name="description" content="Independent software systems focused on distributed infrastructure, payments, and media tooling." />
+		<meta name="keywords" content="software, systems, infrastructure, payments, media, tooling" />
+		<meta name="author" content="Resonant Systems" />
+		<meta name="robots" content="index, follow" />
+		<meta name="googlebot" content="index, follow" />
+		<meta name="bingbot" content="index, follow" />
+		<meta name="yandexbot" content="index, follow" />
 	</head>
-	<body>
-		<slot />
+	<body class="bg-[#f7f6f2] text-[#1c1c1c] antialiased">
+		<main class="max-w-xl mx-auto px-6 py-24">
+		  <slot />
+		</main>
 	</body>
 </html>
-
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
