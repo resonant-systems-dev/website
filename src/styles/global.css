@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+@layer base {
+  * {
+    @apply border-[#222222]/10;
+  }
+  
+  body {
+    font-feature-settings: "kern" 1, "liga" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

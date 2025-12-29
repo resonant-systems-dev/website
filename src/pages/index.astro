@@ -2,22 +2,74 @@
 import Layout from '../layouts/Layout.astro'
 ---
 <Layout>
-  <section class="mb-12">
-    <h1 class="text-4xl font-semibold mb-2">Resonant Systems</h1>
-    <p class="text-neutral-400">
-      Independent software systems focused on
-      distributed infrastructure, payments, and media tooling.
+  <!-- Hero Section -->
+  <section class="mb-20 sm:mb-28">
+    <h1 class="text-5xl sm:text-6xl lg:text-7xl font-light mb-6 tracking-tight">
+      Resonant Systems
+    </h1>
+    <p class="text-lg sm:text-xl text-[#222222]/70 leading-relaxed max-w-2xl">
+      Independent software systems focused on distributed infrastructure, 
+      payments, and media tooling.
     </p>
   </section>
 
-  <section class="mb-12">
-    <h2 class="text-lg font-medium text-amber-500">Status</h2>
-    <p class="text-neutral-400">Currently in private development.</p>
+  <!-- Focus Areas -->
+  <section class="mb-20 sm:mb-28">
+    <h2 class="text-sm font-medium text-amber-600 uppercase tracking-wider mb-8">
+      Focus Areas
+    </h2>
+    <div class="grid sm:grid-cols-3 gap-8">
+      <div class="group">
+        <div class="h-1 w-12 bg-amber-500 mb-4 transition-all group-hover:w-16"></div>
+        <h3 class="text-xl font-medium mb-2">Infrastructure</h3>
+        <p class="text-[#222222]/60 leading-relaxed">
+          Distributed systems architecture and scalable infrastructure solutions.
+        </p>
+      </div>
+      <div class="group">
+        <div class="h-1 w-12 bg-amber-500 mb-4 transition-all group-hover:w-16"></div>
+        <h3 class="text-xl font-medium mb-2">Payments</h3>
+        <p class="text-[#222222]/60 leading-relaxed">
+          Secure payment processing and financial technology platforms.
+        </p>
+      </div>
+      <div class="group">
+        <div class="h-1 w-12 bg-amber-500 mb-4 transition-all group-hover:w-16"></div>
+        <h3 class="text-xl font-medium mb-2">Media Tooling</h3>
+        <p class="text-[#222222]/60 leading-relaxed">
+          Advanced tools and platforms for media processing and delivery.
+        </p>
+      </div>
+    </div>
   </section>
 
+  <!-- Status Section -->
+  <section class="mb-20 sm:mb-28">
+    <h2 class="text-sm font-medium text-amber-600 uppercase tracking-wider mb-6">
+      Status
+    </h2>
+    <div class="flex items-start gap-3">
+      <div class="mt-1.5 h-2 w-2 rounded-full bg-amber-500 flex-shrink-0"></div>
+      <p class="text-lg text-[#222222]/70 leading-relaxed">
+        Currently in private development. We're building foundational systems 
+        and preparing for future public releases.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
   <section>
-    <h2 class="text-lg font-medium text-amber-500">Contact</h2>
-    <p class="text-neutral-400">resonantsystems.dev@gmail.com</p>
+    <h2 class="text-sm font-medium text-amber-600 uppercase tracking-wider mb-6">
+      Contact
+    </h2>
+    <div class="flex items-center gap-4">
+      <a 
+        href="mailto:resonantsystems.dev@gmail.com"
+        class="text-lg text-[#222222] hover:text-amber-600 transition-colors underline decoration-amber-500/30 hover:decoration-amber-500/60 underline-offset-4"
+      >
+        resonantsystems.dev@gmail.com
+      </a>
+    </div>
   </section>
 </Layout>
 
