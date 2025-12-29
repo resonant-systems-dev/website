@@ -1,6 +1,7 @@
 ---
-import Layout from '../layouts/Layout.astro'
+import Layout from "../layouts/Layout.astro";
 ---
+
 <Layout>
   <!-- Hero Section -->
   <section class="mb-20 sm:mb-28">
@@ -8,68 +9,228 @@ import Layout from '../layouts/Layout.astro'
       Resonant Systems
     </h1>
     <p class="text-lg sm:text-xl text-[#222222]/70 leading-relaxed max-w-2xl">
-      Independent software systems focused on distributed infrastructure, 
-      payments, and media tooling.
+      Independent software systems focused on distributed protocols,
+      cryptographic media workflows, and on-chain access models.
     </p>
   </section>
 
   <!-- Focus Areas -->
   <section class="mb-20 sm:mb-28">
-    <h2 class="text-sm font-medium text-amber-600 uppercase tracking-wider mb-8">
+    <h2
+      class="text-sm font-medium text-amber-600 uppercase tracking-wider mb-8"
+    >
       Focus Areas
     </h2>
-    <div class="grid sm:grid-cols-3 gap-8">
+
+    <div class="grid sm:grid-cols-3 gap-10">
       <div class="group">
-        <div class="h-1 w-12 bg-amber-500 mb-4 transition-all group-hover:w-16"></div>
-        <h3 class="text-xl font-medium mb-2">Infrastructure</h3>
+        <div class="h-1 w-12 bg-amber-500 mb-4 transition-all group-hover:w-16">
+        </div>
+        <h3 class="text-xl font-medium mb-2">
+          Distributed Protocol Infrastructure
+        </h3>
         <p class="text-[#222222]/60 leading-relaxed">
-          Distributed systems architecture and scalable infrastructure solutions.
+          Protocol-level systems built on consensus, replication, and
+          content-addressed storage. Emphasis on determinism, validator-run
+          infrastructure, and long-lived data.
         </p>
       </div>
+
       <div class="group">
-        <div class="h-1 w-12 bg-amber-500 mb-4 transition-all group-hover:w-16"></div>
-        <h3 class="text-xl font-medium mb-2">Payments</h3>
+        <div class="h-1 w-12 bg-amber-500 mb-4 transition-all group-hover:w-16">
+        </div>
+        <h3 class="text-xl font-medium mb-2">Cryptography & RightsMetadata</h3>
         <p class="text-[#222222]/60 leading-relaxed">
-          Secure payment processing and financial technology platforms.
+          Practical cryptographic workflows for encryption, key distribution,
+          and metadata integrity. Focused on OpenTDF-style systems and
+          industry-standard schemas rather than policy-heavy DRM.
         </p>
       </div>
+
       <div class="group">
-        <div class="h-1 w-12 bg-amber-500 mb-4 transition-all group-hover:w-16"></div>
-        <h3 class="text-xl font-medium mb-2">Media Tooling</h3>
+        <div class="h-1 w-12 bg-amber-500 mb-4 transition-all group-hover:w-16">
+        </div>
+        <h3 class="text-xl font-medium mb-2">
+          On-chain Payments & Access Control
+        </h3>
         <p class="text-[#222222]/60 leading-relaxed">
-          Advanced tools and platforms for media processing and delivery.
+          Wallet-native payments and ownership proofs on public blockchains,
+          including ticketing, access gating, and usage-linked economic models.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- Status Section -->
+  <!-- Applications & Protocols -->
   <section class="mb-20 sm:mb-28">
-    <h2 class="text-sm font-medium text-amber-600 uppercase tracking-wider mb-6">
-      Status
+    <h2 class="text-sm uppercase tracking-wider text-[#222222]/60 mb-8">
+      Applications & Protocols
     </h2>
-    <div class="flex items-start gap-3">
-      <div class="mt-1.5 h-2 w-2 rounded-full bg-amber-500 flex-shrink-0"></div>
-      <p class="text-lg text-[#222222]/70 leading-relaxed">
-        Currently in private development. We're building foundational systems 
-        and preparing for future public releases.
-      </p>
+
+    <div class="space-y-12">
+      <div>
+        <h3 class="text-xl font-medium mb-2">Mojave</h3>
+        <p class="text-[#222222]/80 mb-3">
+          Distributed media protocol built on CometBFT, combining encrypted
+          storage, verifiable replication, and DDEX-compatible metadata
+          pipelines. Designed around validator-operated infrastructure.
+        </p>
+        <a
+          href="https://github.com/alecsavvy/mojave"
+          target="_blank"
+          rel="noopener"
+          class="text-sm underline"
+        >
+          GitHub → alecsavvy/mojave
+        </a>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-medium mb-2">Shreddr</h3>
+        <p class="text-[#222222]/80 mb-3">
+          Solana-based ticketing and access system emphasizing ownership proofs,
+          offline verification, and wallet-native user flows.
+        </p>
+        <a
+          href="https://github.com/alecsavvy/shreddr"
+          target="_blank"
+          rel="noopener"
+          class="text-sm underline"
+        >
+          GitHub → alecsavvy/shreddr
+        </a>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-medium mb-2">Stashd</h3>
+        <p class="text-[#222222]/80 mb-3">
+          Experimental local-first storage system exploring encrypted,
+          content-addressed blobs and developer-centric data workflows.
+        </p>
+        <a
+          href="https://github.com/alecsavvy/stashd"
+          target="_blank"
+          rel="noopener"
+          class="text-sm underline"
+        >
+          GitHub → alecsavvy/stashd
+        </a>
+      </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section>
-    <h2 class="text-sm font-medium text-amber-600 uppercase tracking-wider mb-6">
-      Contact
+  <div
+    class="h-px bg-gradient-to-r from-transparent via-[#222222]/10 to-transparent my-16"
+  >
+  </div>
+
+  <!-- Libraries -->
+  <section class="mb-20 sm:mb-28">
+    <h2 class="text-sm uppercase tracking-wider text-[#222222]/60 mb-8">
+      Libraries
     </h2>
-    <div class="flex items-center gap-4">
-      <a 
-        href="mailto:resonantsystems.dev@gmail.com"
-        class="text-lg text-[#222222] hover:text-amber-600 transition-colors underline decoration-amber-500/30 hover:decoration-amber-500/60 underline-offset-4"
+
+    <div class="space-y-12">
+      <div>
+        <h3 class="text-xl font-medium mb-2">OpenTDF (Go)</h3>
+        <p class="text-[#222222]/80 mb-3">
+          Actively maintained Go implementation of the OpenTDF specification,
+          focused on practical encryption flows, key wrapping, and minimal
+          policy assumptions.
+        </p>
+        <a
+          href="https://github.com/alecsavvy/opentdf"
+          target="_blank"
+          rel="noopener"
+          class="text-sm underline"
+        >
+          GitHub → alecsavvy/opentdf
+        </a>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-medium mb-2">DDEX Protobufs</h3>
+        <p class="text-[#222222]/80 mb-3">
+          Protobuf definitions and Go bindings for DDEX ERN standards,
+          originally authored as part of OpenAudio related work and maintained
+          independently. The library has not yet been adopted into production
+          systems but serves as a complete, reusable reference implementation.
+        </p>
+        <a
+          href="https://github.com/alecsavvy/ddex-proto"
+          target="_blank"
+          rel="noopener"
+          class="text-sm underline"
+        >
+          GitHub → alecsavvy/ddex-proto
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div
+    class="h-px bg-gradient-to-r from-transparent via-[#222222]/10 to-transparent my-16"
+  >
+  </div>
+
+  <!-- Previous Work -->
+  <section class="mb-20 sm:mb-28">
+    <h2 class="text-sm uppercase tracking-wider text-[#222222]/60 mb-8">
+      Previous Work
+    </h2>
+
+    <div>
+      <h3 class="text-lg font-medium mb-2">Open Audio Protocol</h3>
+      <p class="text-[#222222]/80 mb-3">
+        Core architect and contributor to the design and Go implementation of
+        the Open Audio Protocol while at Audius. Work focused on protocol
+        abstractions and developer tooling. This work predates Resonant Systems
+        and is maintained externally.
+      </p>
+      <a
+        href="https://github.com/OpenAudio/go-openaudio"
+        target="_blank"
+        rel="noopener"
+        class="text-sm underline"
       >
-        resonantsystems.dev@gmail.com
+        GitHub → OpenAudio/go-openaudio
       </a>
     </div>
   </section>
-</Layout>
 
+  <!-- Contact -->
+  <section class="mt-20 sm:mt-28">
+    <h2
+      class="text-sm font-medium text-amber-600 uppercase tracking-wider mb-6"
+    >
+      Founder
+    </h2>
+    <p class="text-[#222222]/70 max-w-2xl leading-relaxed mb-4">
+      Resonant Systems was founded by Alec Savoy. Development and maintenance
+      are conducted primarily in public. Ongoing work is reflected in active
+      repositories and direct technical collaboration.
+    </p>
+    <ul class="space-y-2 text-[#222222]/70">
+      <li>
+        GitHub:
+        <a
+          href="https://github.com/alecsavvy"
+          target="_blank"
+          rel="noopener"
+          class="underline hover:text-amber-600"
+        >
+          github.com/alecsavvy
+        </a>
+      </li>
+      <li>
+        Email:
+        <a
+          href="mailto:resonantsystems.dev@gmail.com"
+          class="underline hover:text-amber-600"
+        >
+          resonantsystems.dev@gmail.com
+        </a>
+      </li>
+    </ul>
+  </section>
+</Layout>

@@ -1,0 +1,148 @@
+---
+import '../styles/global.css'
+import logo from '../assets/logo.jpg'
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+
+    <title>Resonant Systems</title>
+    <meta name="description" content="Independent software systems focused on distributed infrastructure, payments, and media tooling." />
+    <meta name="keywords" content="software, systems, infrastructure, payments, media, tooling" />
+    <meta name="author" content="Resonant Systems" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Resonant Systems" />
+    <meta property="og:description" content="Independent software systems focused on distributed infrastructure, payments, and media tooling." />
+    <meta property="og:image" content={`${Astro.site || Astro.url.origin}/og.jpg`} />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="500" />
+    <meta property="og:image:height" content="500" />
+    <meta property="og:url" content={Astro.url.href} />
+    <meta property="og:site_name" content="Resonant Systems" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Resonant Systems" />
+    <meta name="twitter:description" content="Independent software systems focused on distributed infrastructure, payments, and media tooling." />
+    <meta name="twitter:image" content={`${Astro.site || Astro.url.origin}/og.jpg`} />
+  </head>
+
+  <body class="bg-[#f6f4f0] text-[#222222] antialiased min-h-screen">
+    <div class="relative min-h-screen">
+      <!-- Background decoration -->
+      <div class="fixed inset-0 overflow-hidden pointer-events-none opacity-30">
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl"></div>
+      </div>
+
+      <main class="relative max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 py-16 sm:py-24">
+        <!-- Header -->
+        <header class="mb-16 sm:mb-24">
+          <div class="flex items-center gap-4 mb-8">
+            <img src={logo.src} alt="Resonant Systems Logo" class="h-12 w-auto" />
+            <div class="h-px flex-1 bg-gradient-to-r from-[#222222]/20 to-transparent"></div>
+          </div>
+
+          <p class="text-lg text-[#222222]/80 max-w-2xl">
+            Independent software systems focused on distributed infrastructure,
+            cryptographic media workflows, and protocol-level tooling.
+          </p>
+        </header>
+
+        <!-- Projects -->
+        <section class="mb-24">
+          <h2 class="text-sm uppercase tracking-wider text-[#222222]/60 mb-8">
+            Projects
+          </h2>
+
+          <div class="space-y-12">
+            <div>
+              <h3 class="text-xl font-medium mb-2">Mojave</h3>
+              <p class="text-[#222222]/80 mb-3">
+                Architected and implemented a distributed media protocol built on
+                CometBFT, combining encrypted storage, verifiable replication,
+                and DDEX-compatible metadata pipelines.
+              </p>
+              <a href="https://github.com/alecsavvy/mojave" target="_blank" rel="noopener" class="text-sm underline">
+                GitHub → alecsavvy/mojave
+              </a>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-medium mb-2">Shreddr</h3>
+              <p class="text-[#222222]/80 mb-3">
+                Designed and built a Solana-based ticketing system emphasizing
+                ownership proofs, offline verification, and wallet-native UX.
+              </p>
+              <a href="https://github.com/alecsavvy/shreddr" target="_blank" rel="noopener" class="text-sm underline">
+                GitHub → alecsavvy/shreddr
+              </a>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-medium mb-2">Stashd</h3>
+              <p class="text-[#222222]/80 mb-3">
+                Experimental local-first encrypted storage tooling exploring
+                content-addressed blobs and developer-centric workflows.
+              </p>
+              <a href="https://github.com/alecsavvy/stashd" target="_blank" rel="noopener" class="text-sm underline">
+                GitHub → alecsavvy/stashd
+              </a>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-medium mb-2">OpenTDF (Go)</h3>
+              <p class="text-[#222222]/80 mb-3">
+                Go implementation of the OpenTDF specification focused on
+                pragmatic encryption flows, key wrapping, and minimal policy
+                overhead.
+              </p>
+              <a href="https://github.com/alecsavvy/opentdf" target="_blank" rel="noopener" class="text-sm underline">
+                GitHub → alecsavvy/opentdf
+              </a>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-medium mb-2">DDEX Protobufs</h3>
+              <p class="text-[#222222]/80 mb-3">
+                Protobuf definitions and Go bindings for DDEX ERN standards,
+                enabling structured, machine-readable music metadata pipelines.
+              </p>
+              <a href="https://github.com/alecsavvy/ddex-proto" target="_blank" rel="noopener" class="text-sm underline">
+                GitHub → alecsavvy/ddex-proto
+              </a>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-medium mb-2">Open Audio Protocol</h3>
+              <p class="text-[#222222]/80 mb-3">
+                Core contributor to the Go implementation of the Open Audio
+                Protocol while at Audius. This work predates Resonant Systems and
+                is maintained externally.
+              </p>
+              <a href="https://github.com/OpenAudio/go-openaudio" target="_blank" rel="noopener" class="text-sm underline">
+                GitHub → OpenAudio/go-openaudio
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="relative mt-32 pb-12">
+          <div class="h-px bg-gradient-to-r from-transparent via-[#222222]/10 to-transparent mb-8"></div>
+          <p class="text-sm text-[#222222]/60 text-center">
+            © {new Date().getFullYear()} Resonant Systems. All rights reserved.
+          </p>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
