@@ -24,13 +24,14 @@ import logo from '../assets/logo.jpg'
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content="Resonant Systems" />
 		<meta property="og:description" content="Independent software systems focused on distributed infrastructure, payments, and media tooling." />
-		<meta property="og:image" content={new URL(logo.src, Astro.url).href} />
+		<meta property="og:image" content={`${Astro.url.origin}/logo.jpg`} />
+		<meta property="og:url" content={Astro.url.href} />
 		
 		<!-- Twitter -->
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:title" content="Resonant Systems" />
 		<meta name="twitter:description" content="Independent software systems focused on distributed infrastructure, payments, and media tooling." />
-		<meta name="twitter:image" content={new URL(logo.src, Astro.url).href} />
+		<meta name="twitter:image" content={`${Astro.url.origin}/logo.jpg`} />
 	</head>
 	<body class="bg-[#f6f4f0] text-[#222222] antialiased min-h-screen">
 		<div class="relative min-h-screen">
